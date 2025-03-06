@@ -1,8 +1,12 @@
+import { Header } from "../../widgets/index"
+
 export function MainPage() {
 
   return (
     <>
-      <h1>Тест</h1>
+      <div className="image-container" />
+
+      <Header />
     </>
   )
 }
