@@ -1,0 +1,167 @@
+header {
+    width: 100%;
+    height: 126px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35.9px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 150px;
+}
+
+.logo-img {
+    width: 97px;
+    height: 86px;
+    order: 1;
+}
+
+.lower-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-container {
+    width: 50%;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.container {
+    width: 675px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    order: 2;
+}
+
+.working-circle {
+    width: 12px;
+    height: 12px;
+    background: rgba(25, 194, 81, 1);
+    border-radius: 12px;
+    display: inline-block; 
+}
+
+.button-container {
+    width: 50%;
+    height: 100%;
+}
+
+.booking-button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.burger {
+    order: 0;
+}
+
+@media (max-width: 767px) {
+    header {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: none;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+    .logo-img {
+        width: 77px;
+        height: 66px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1850px) {
+    header {
+        padding: 20px 80px
+    }
+
+    .container {
+        width: 575px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logo-img {
+        width: 42px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 1440px) {
+    header {
+        padding: 10px 24px;
+    }
+    
+    .button-container {
+        display: none;
+        width: 0px;
+    }
+
+    .container {
+        align-items: end;
+        gap: none;
+        justify-content: flex-start;
+        width: 210px;
+    }
+
+    .text-container {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .lower-text::after {
+        content: "";
+    }
+    
+    .extra-text {
+        display: none;
+    }
+
+    .working-circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .burger {
+        order: 2;
+    }
+
+    .logo-img {
+        order: 0;
+    }
+
+    .container {
+        width: 148px;
+        height: 38px;
+        order: 1;
+    }
+
+    .lower-text {
+        gap: 8px;
+    }
+
+    .text-container {
+        height: 38px;
+    }
+
+}

@@ -2,3 +2,116 @@
   padding: 0;
   margin: 0;
 }
+
+.font400 {
+  font-family: Geologica;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font300 {
+  font-family: Geologica;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font500 {
+  font-family: Geologica;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font300-20 {
+  font-family: Geologica;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font500-20 {
+  font-family: Geologica;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font700 {
+  font-family: Geologica;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font700-32 {
+  font-family: Geologica;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font-white {
+  color: #FFFFFF;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 960px;
+  z-index: -1;
+  background: linear-gradient(283.16deg, rgba(0, 0, 0, 0) 4.05%, rgba(0, 0, 0, 0.3) 62.62%), url('../../shared/assets/icons/image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    background-position: left;
+    height: 588px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1850px) {
+  .font700-32 {
+    font-size: 24px;
+  }
+
+  .font500 {
+    font-size: 16px;
+  }
+
+  .font500-20 {
+    font-size: 16px;
+  }
+
+  .font300-20 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .font700-32 {
+    font-size: 16px;
+  }
+
+  .font500 {
+    font-size: 16px;
+  }
+
+  .font500-20 {
+    font-size: 14px;
+  }
+
+}
