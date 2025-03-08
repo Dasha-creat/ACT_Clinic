@@ -1,4 +1,4 @@
-import { Header } from "../../widgets/index"
+import { Header, InfoBlock } from "../../widgets/index"
 
 export function MainPage() {
 
@@ -7,6 +7,8 @@ export function MainPage() {
       <div className="image-container" />
 
       <Header />
+
+      <InfoBlock />
     </>
   )
 }

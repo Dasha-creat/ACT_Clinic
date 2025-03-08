@@ -1,2 +1,6 @@
 export { default as menu } from "./icons/menu.svg"
 export { default as logo } from "./icons/logo.svg"
+export { default as info_tooth } from "./icons/info-tooth.svg"
+export { default as x_ray } from "./icons/x-ray.png"
+export { default as plus } from "./icons/add.svg"
+export { default as prize } from "./icons/prize.svg"

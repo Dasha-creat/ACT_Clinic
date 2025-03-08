@@ -27,12 +27,52 @@
   letter-spacing: 0%;
 }
 
+.font700 {
+  font-family: Geologica;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
 .font300-20 {
   font-family: Geologica;
   font-weight: 300;
   font-size: 20px;
   line-height: 22.5px;
   letter-spacing: 0%;
+}
+
+.font300-24 {
+  font-family: Geologica;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;  
+}
+
+.font400-44 {
+  font-family: Geologica;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  letter-spacing: 0%;  
+}
+
+.font400-20 {
+  font-family: Geologica;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;  
+}
+
+.font400-20-second {
+  font-family: Geologica;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;  
 }
 
 .font500-20 {
@@ -43,10 +83,51 @@
   letter-spacing: 0%;
 }
 
-.font700 {
+.font500-28 {
+  font-family: Geologica;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 22.5px;
+  letter-spacing: 0%;
+}
+
+.font500-60-uppercase {
+  font-family: Geologica;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;  
+}
+
+.font600-24 {
+  font-family: Geologica;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.font600-24-second {
+  font-family: Geologica;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.font600-40 {
+  font-family: Geologica;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.font700-20 {
   font-family: Geologica;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22.5px;
   letter-spacing: 0%;
 }
@@ -61,6 +142,14 @@
 
 .font-white {
   color: #FFFFFF;
+}
+
+.font-black {
+  color: rgba(43, 49, 62, 1);
+}
+
+.font-orange {
+  color: rgba(238, 114, 3, 1);
 }
 
 .image-container {
@@ -83,13 +172,13 @@
 
 }
 
-@media (min-width: 1024px) and (max-width: 1850px) {
+@media (min-width: 1025px) and (max-width: 1850px) {
   .font700-32 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .font500 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .font500-20 {
@@ -97,7 +186,39 @@
   }
 
   .font300-20 {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .font500-28 {
+    font-size: 24px;
+  }
+
+  .font400-44 {
+    font-size: 40px;
+  }
+
+  .font500-60-uppercase {
+    font-size: 56px;
+  }
+
+  .font300-24 {
+    font-size: 20px;
+  }
+
+  .font600-24 {
+    font-size: 20px;
+  }
+
+  .font600-40 {
+    font-size: 36px;
+  }
+
+  .font700-20 {
+    font-size: 16px;
+  }
+
+  .font400-20 {
+    font-size: 16px;
   }
 }
 
@@ -107,11 +228,50 @@
   }
 
   .font500 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .font500-20 {
     font-size: 14px;
   }
 
+  .font500-28 {
+    font-size: 16px;
+  }
+  
+  .font400-44 {
+    font-size: 24px;
+  }
+
+  .font500-60-uppercase {
+    font-size: 28px;
+  }
+
+  .font300-24 {
+    font-size: 14px;
+  }
+
+  .font600-24 {
+    font-size: 20px;
+  }
+
+  .font600-40 {
+    font-size: 20px;
+  }
+
+  .font700-20 {
+    font-size: 16px;
+  }
+
+  .font400-20 {
+    font-size: 14px;
+  }
+
+  .font400-20-second {
+    font-size: 14px;
+  }
+
+  .font600-24-second {
+    font-size: 16px;
+  }
 }

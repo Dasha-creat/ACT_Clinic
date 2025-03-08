@@ -1,67 +1,61 @@
 header {
-    width: 100%;
-    height: 126px;
-    top: 0;
-    left: 0;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(35.9px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    max-height: 126px;
+    box-sizing: border-box;
+    padding: 20px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 20px 150px;
 }
 
 .logo-img {
-    width: 97px;
-    height: 86px;
+    width: 5%;
+    min-width: 42px;
+    max-width: 97px;
+    height: auto;
+    max-height: 86px;
+    min-height: 38px;
     order: 1;
 }
 
-.lower-text {
+.container {
+    width: 50%;
+    min-width: 148px;
+    max-width: 675px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    order: 2;
+    gap: 40px;
+}
+
+.burger {
+    order: 0;
 }
 
 .text-container {
-    width: 50%;
-    height: 65px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: space-between;
     flex-grow: 1;
-}
-
-.container {
-    width: 675px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    order: 2;
-}
-
-.working-circle {
-    width: 12px;
-    height: 12px;
-    background: rgba(25, 194, 81, 1);
-    border-radius: 12px;
-    display: inline-block; 
+    width: 50%;
+    max-width: 292px;
+    min-width: 148px;
+    height: auto;
+    max-height: 65px;
+    min-height: 38px;
 }
 
 .button-container {
     width: 50%;
-    height: 100%;
 }
 
 .booking-button {
     width: 100%;
-    height: 100%;
+    height: 80px;
     background: none;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 12px;
@@ -69,62 +63,59 @@ header {
     padding: 10px;
 }
 
-.burger {
-    order: 0;
+.working-circle {
+    width: 12px;
+    height: 12px;
+    background: rgba(25, 194, 81, 1);
+    border-radius: 50%;
+    display: inline-block;
 }
 
-@media (max-width: 767px) {
+.lower-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
     header {
-        background-color: rgba(255, 255, 255, 0);
+        width: auto;
+        background-color: transparent;
         backdrop-filter: none;
         border-bottom: none;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1600px) {
-    .logo-img {
-        width: 77px;
-        height: 66px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1850px) {
-    header {
-        padding: 20px 80px
-    }
-
-    .container {
-        width: 575px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .logo-img {
-        width: 42px;
-        height: 38px;
-    }
-}
-
-@media (max-width: 1440px) {
-    header {
-        padding: 10px 24px;
-    }
-    
-    .button-container {
-        display: none;
-        width: 0px;
-    }
-
-    .container {
-        align-items: end;
-        gap: none;
-        justify-content: flex-start;
-        width: 210px;
+        height: 40px;
+        padding: 0px 0px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     .text-container {
-        justify-content: center;
-        gap: 5px;
+        height: 38px;
+    }
+
+    .logo-img {
+        order: 0;
+    }
+
+    .container {
+        order: 1;
+    }
+
+    .burger {
+        order: 2;
+    }
+}
+
+@media (max-width: 1700px) {
+    .button-container{
+        display: none;
+    }
+
+    .container {
+        width: fit-content;
     }
 }
 
@@ -132,7 +123,7 @@ header {
     .lower-text::after {
         content: "";
     }
-    
+
     .extra-text {
         display: none;
     }
@@ -142,26 +133,19 @@ header {
         height: 8px;
     }
 
-    .burger {
-        order: 2;
-    }
-
-    .logo-img {
-        order: 0;
-    }
-
-    .container {
-        width: 148px;
-        height: 38px;
-        order: 1;
-    }
-
     .lower-text {
         gap: 8px;
     }
+}
 
-    .text-container {
-        height: 38px;
+@media (min-width: 1024px) and (max-width: 1850px) {
+    header {
+        padding: 20px 72px;
     }
+}
 
+@media (min-width: 769px) and (max-width: 1440px) {
+    header {
+        padding: 16px 24px;
+    }
 }
