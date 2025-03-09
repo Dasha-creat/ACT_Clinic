@@ -8,7 +8,7 @@ export function PromoPrize({svg, name}) {
     return (
         <div className="prize-container">
             <div className="picture-container">
-                <img src={svg} alt="prize" className="picture-large" />
+                <img src={svg} alt="prize" className={className} />
             </div>
 
             <div className="filling">

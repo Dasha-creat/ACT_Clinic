@@ -1,0 +1,73 @@
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: rgba(255, 255, 255, 1);
+    padding: 60px;
+    gap: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.quiz-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.quiz-top-text-complete {
+    display: none;
+}
+
+.quiz-top-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.fast-mark-orange {
+    width: 24px;
+    height: 24px;
+}
+
+.progress-bar {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.progress {
+    width: 25%;
+    height: 4px;
+    background: rgba(233, 235, 240, 1);
+    border-radius: 10px;
+}
+
+.progress.active {
+    background: rgba(238, 114, 3, 1);
+}
+
+@media (max-width: 768px) {
+    .progress-bar {
+        gap: 8px;
+    }
+
+    .quiz-container {
+        gap: 16px;
+        padding: 16px;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .quiz-container {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px){
+
+}

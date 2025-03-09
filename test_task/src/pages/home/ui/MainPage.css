@@ -1,0 +1,32 @@
+.main-info-container {
+    padding: 0 150px;
+    position: relative;
+  }
+
+.promo-quiz{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+@media (min-width: 1024px) and (max-width: 1850px) {
+    .main-info-container {
+        padding: 0px 72px;
+    }
+}
+  
+@media (min-width: 769px) and (max-width: 1440px) {
+    .main-info-container {
+        padding: 0px 24px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .main-info-container {
+      padding: 0px 16px;
+    }
+
+    .promo-quiz {
+        gap: 32px;
+    }
+}
