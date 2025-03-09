@@ -1,0 +1,79 @@
+.answers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.text-icon-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.img-answer-card {
+    width: 100%;
+    height: 225px;
+    background: rgba(245, 247, 250, 1);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.img-answer-card.selected {
+    background: rgba(0, 154, 148, 0.2);
+}
+
+.answer-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.chosen {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 5%;
+    right: 5%;
+}
+
+.transparent-bottom {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 69%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 69%);
+}
+
+.transparent-top {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+}
+
+@media (max-width: 768px) {
+    .answers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 12px;
+    }
+
+    .img-answer-card {
+        height: 129px;
+    }
+
+    .answer-icon {
+        height: 129px;
+    }
+
+    .chosen {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 360px) {
+    .answers {
+        grid-template-columns: repeat(2, 134px);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+    }
+}

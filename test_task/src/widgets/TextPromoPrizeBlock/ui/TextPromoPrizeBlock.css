@@ -1,0 +1,45 @@
+.block-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-plus-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.black-plus {
+    width: 40px;
+    height: 40px;
+}
+
+.text-plus-container span::after {
+    content: "+";
+    display: none;
+}
+
+.text-plus {
+    width:inherit;
+}
+
+@media (max-width: 900px) {
+    .block-container {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .text-plus-container span::after {
+        display: inline; 
+        margin-left: 5px;
+      }
+
+    .black-plus {
+        display: none;
+    }
+}

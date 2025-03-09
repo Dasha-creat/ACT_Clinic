@@ -1,2 +1,5 @@
 export { Header } from "./Header/index"
 export { InfoBlock } from "./InformationBlock/index"
+export { Advantages } from "./Advantages/index"
+export { TextPromoPrizeBlock } from "./TextPromoPrizeBlock/index"
+export { Quiz } from "./Quiz/index"
