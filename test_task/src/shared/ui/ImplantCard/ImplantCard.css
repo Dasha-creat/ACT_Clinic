@@ -1,0 +1,131 @@
+.name-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.implant-card {
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+
+.implant-main-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.country-price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.flag {
+    width: 49px;
+    height: 28px;
+}
+
+.offer-card {
+    background: rgba(0, 154, 148, 1);
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.text-line {
+    text-decoration: line-through;
+}
+
+.economy-container {
+    border: 2px solid rgba(233, 235, 240, 1);
+    border-radius: 12px;
+    padding: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.price-text {
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        height: 50px;
+    }
+
+    .economy-container {
+        height: 50px;
+    }
+
+    .flag {
+        width: 37px;
+        height: 22px;
+    }
+
+    .implant-card {
+        border-radius: 6px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 16px;
+    }
+
+    .economy-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .price-card {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .name-card {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .implant-main-block {
+        gap: 16px;
+    }
+
+    .info-card {
+        gap: 16px;
+    }
+
+    .country-price {
+        gap: 4px;
+    }
+}

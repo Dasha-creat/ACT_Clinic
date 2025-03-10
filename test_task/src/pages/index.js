@@ -1,1 +1,1 @@
-export { MainPage as App } from "./home/ui/MainPage.jsx"
+export { MainPage as App } from "./home/index"
