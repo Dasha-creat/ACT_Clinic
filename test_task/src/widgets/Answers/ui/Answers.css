@@ -1,0 +1,51 @@
+.answers-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.answer-title {
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    width: 70%;
+}
+
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .answers-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .answer-title {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .answer-title {
+        font-family: Geologica;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 110.00000000000001%;
+    }
+
+    .answer-container {
+        gap: 24px;
+    }
+}

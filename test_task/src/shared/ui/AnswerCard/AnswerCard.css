@@ -1,0 +1,83 @@
+.question-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-question {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 90%;
+}
+
+.question-answer-container {
+    box-sizing: border-box;
+    padding: 30px;
+    background: rgba(247, 248, 250, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.font-answer {
+    font-family: Geologica;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    vertical-align: middle;
+}
+
+.font-question {
+    font-family: Geologica;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110.00000000000001%;
+}
+
+.toggle-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .font-answer {
+        font-size: 16px;
+    }
+
+    .font-question {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .font-answer {
+        font-family: Geologica;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+    }
+
+    .font-question {
+        font-family: Geologica;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+    }
+}
+
+@media (max-width: 768px) {
+    .question-answer-container {
+        border-radius: 8px;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .toggle-icon {
+        width: 32px;
+        height: 32px;
+    }
+}

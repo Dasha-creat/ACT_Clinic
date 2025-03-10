@@ -3,6 +3,12 @@
     position: relative;
   }
 
+.container-full {
+    box-sizing: border-box;
+    padding: 80px 150px;
+    background: rgba(255, 255, 255, 1);
+}
+
 .promo-quiz{
     display: flex;
     flex-direction: column;
@@ -13,17 +19,29 @@
     .main-info-container {
         padding: 0px 72px;
     }
+    
+    .container-full {
+        padding: 70px 72px;
+    }
 }
   
 @media (min-width: 769px) and (max-width: 1440px) {
     .main-info-container {
         padding: 0px 24px;
     }
+
+    .container-full {
+        padding: 60px 24px;
+    }
 }
   
 @media (max-width: 768px) {
     .main-info-container {
       padding: 0px 16px;
+    }
+
+    .container-full {
+        padding: 40px 16px;
     }
 
     .promo-quiz {
