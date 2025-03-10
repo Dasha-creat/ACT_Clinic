@@ -18,6 +18,7 @@ export function Answers() {
                         number={question.id}
                         question={question.question}
                         answer={question.answer}
+                        key={question.id}
                         />
                     ))}
                 </div>
@@ -28,6 +29,7 @@ export function Answers() {
                         number={question.id}
                         question={question.question}
                         answer={question.answer}
+                        key={question.id}
                         />
                     ))}
                 </div>
