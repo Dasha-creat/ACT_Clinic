@@ -1,0 +1,88 @@
+.experts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    height: auto;
+}
+
+.experts-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.experts-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guarantee-text {
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110.00000000000001%;
+}
+
+.experts-area-text {
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .guarantee-text {
+        font-size: 24px;
+    }
+
+    .experts-area-text {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .guarantee-text {
+        font-family: Geologica;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110.00000000000001%;
+    }
+
+    .experts-area-text {
+        font-family: Geologica;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 110.00000000000001%;
+    }
+
+    .experts-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .experts-container > div:first-child {
+        order: 1;
+    }
+
+    .extra-area-text {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .experts-container {
+        gap: 24px;
+    }
+
+    .experts-area-text {
+        width: 90%;
+    }
+
+    .experts-info-text {
+        gap: 12px;
+    }
+
+    .experts-info-block {
+        gap: 24px;
+    }
+}

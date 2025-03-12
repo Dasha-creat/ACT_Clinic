@@ -1,0 +1,145 @@
+.booking-button-card {
+    background: rgba(238, 114, 3, 1);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    width: 312px;
+    height: 80px;
+}
+
+.gray-heart {
+    height: 41%;
+    width: 56%;
+    position: absolute;
+    top: -10%;
+    right: 50%;
+}
+
+.white-heart {
+    width: 63%;
+    height: 37.5%;
+    position: absolute;
+    right: 60%;
+    top: 5%;
+}
+
+.prize-heart {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: rotate(10deg);
+}
+
+.svg-container {
+    width: 100%;
+}
+
+.info-card-contetnt {
+    position: relative;
+    overflow: hidden;
+    background: rgba(247, 248, 250, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.implants-quantity {
+    margin-top: 162px;
+    z-index: 99;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-content {
+    margin-top: 114px;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.font500-32 {
+    font-family: Geologica;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 110.00000000000001%;
+}
+
+.font700-48 {
+    font-family: Geologica;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.font300-prize {
+    font-family: Geologica;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .booking-button-card {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .booking-button-card {
+        width: 100%;
+    }
+
+    .gray-heart,
+    .white-heart,
+    .prize-heart {
+        display: none;
+    }
+
+    .info-card-contetnt {
+        background: none;
+        gap: 16px;
+    }
+
+    .button-content, 
+    .implants-quantity {
+        margin: 0;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .font300-prize {
+        font-size: 16px;
+    }
+
+    .font500-32 {
+        font-size: 28px;
+    }
+
+    .font700-48 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .font300-prize {
+        font-size: 14px;
+    }
+
+    .font500-32 {
+        font-size: 24px;
+    }
+
+    .font700-48 {
+        font-size: 40px;
+    }
+}
