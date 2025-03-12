@@ -7,36 +7,55 @@ body {
   background: linear-gradient(0deg, #F7F8FA, #F7F8FA), radial-gradient(101.54% 57.27% at 50% 59.3%, rgba(255, 255, 255, 0.4) 0%, rgba(247, 248, 250, 0) 100%);
 }
 
-.font400 {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line-heigth-110 {
+  line-height: 110%;
+}
+
+.line-heigth-120 {
+  line-height: 120%;
+}
+
+.line-heigth-130 {
+  line-height: 130%;
+}
+
+.font300,
+.font400,
+.font500,
+.font600,
+.font700 {
   font-family: Geologica;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 22.5px;
+  line-height: 100%;
   letter-spacing: 0%;
 }
 
 .font300 {
-  font-family: Geologica;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 22.5px;
-  letter-spacing: 0%;
+}
+
+.font400 {
+  font-weight: 400;
 }
 
 .font500 {
-  font-family: Geologica;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22.5px;
-  letter-spacing: 0%;
+}
+
+.font600 {
+  font-weight: 600;
 }
 
 .font700 {
-  font-family: Geologica;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22.5px;
-  letter-spacing: 0%;
 }
 
 .font300-20 {
@@ -200,6 +219,10 @@ body {
   color: rgba(161, 168, 185, 1);
 }
 
+.font-green {
+  color: rgba(0, 154, 148, 1);
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
@@ -216,7 +239,6 @@ body {
     background-position: left;
     height: 588px;
   }
-
 }
 
 @media (min-width: 1025px) and (max-width: 1850px) {
@@ -361,5 +383,9 @@ body {
 
   .font600-32 {
     font-size: 20px;
+  }
+
+  .line-heigth-110 {
+
   }
 }

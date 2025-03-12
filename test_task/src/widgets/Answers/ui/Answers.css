@@ -29,6 +29,10 @@
     .answers-list {
         grid-template-columns: 1fr;
     }
+
+    .answer-title {
+        width: 90%;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1850px) {

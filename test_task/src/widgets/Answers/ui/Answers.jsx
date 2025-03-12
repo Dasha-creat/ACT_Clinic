@@ -9,7 +9,7 @@ export function Answers() {
 
     return (
         <div className="answer-container">
-            <p className="answer-title">Ответим на ваши вопросы</p>
+            <p className="answer-title">Ответим на ваши вопросы</p>
 
             <div className="answers-list">
                 <div className="column">

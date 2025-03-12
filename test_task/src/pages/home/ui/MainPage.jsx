@@ -1,4 +1,4 @@
-import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers } from "../../../widgets/index"
+import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers, Experts } from "../../../widgets/index"
 import "./MainPage.css"
 
 export function MainPage() {
@@ -19,8 +19,13 @@ export function MainPage() {
 
       </div>
       <div className="container-full">
+      <Experts />
+      </div>
+      <div className="container-full">
       <Answers />
       </div>
+
+
     </>
   )
 }
