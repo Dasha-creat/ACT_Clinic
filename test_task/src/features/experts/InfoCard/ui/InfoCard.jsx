@@ -1,6 +1,7 @@
 import "./InfoCard.css"
 import { HEADER_TEXT, INFO_CARD_TEXT } from "../../../../shared/constants/index"
 import { white_heart, gray_heart, prize } from "../../../../shared/assets/index"
+import { ConsultationContainer } from "../../../consultation/ConsultationContainer"
 
 export function InfoCard() {
     return (
@@ -17,12 +18,8 @@ export function InfoCard() {
             </span>
 
             <div className="button-content">
-                <button className="booking-button-card">
-                    <p className="font700-20 font-white">{HEADER_TEXT.sign_up}</p>
-                    <p className="font300-prize font-white">{HEADER_TEXT.take_prize}</p>
-                </button>
+                <ConsultationContainer buttonType="content" />
             </div>
-
-            </div>
+        </div>
     )
 }

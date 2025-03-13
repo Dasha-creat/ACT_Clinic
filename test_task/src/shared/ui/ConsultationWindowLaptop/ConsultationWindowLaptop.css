@@ -1,0 +1,230 @@
+.consultation-window {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 80px 60px;
+    background: rgba(247, 248, 250, 1);
+    margin: 0px 137px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    max-width: 1346px;
+    min-width: auto;
+}
+
+.consultation-window-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 85%;
+    z-index: 100;
+    position: relative;
+}
+
+.take-consultation-block {
+    display: flex;
+    gap: 40px;
+}
+
+.consultation-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 476px;
+    min-width: 400px;
+}
+
+.consultation-advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consultation-advantages-item {
+    display: flex;
+    gap: 10px;
+}
+
+.consultation-booking {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: end;
+}
+
+.consultation-phone-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doctor {
+    position: absolute;
+    width: 100%;
+    max-width: 448px;
+    min-width: 240px;
+    height: auto;
+    top: 117px;
+    left: 931px;
+    z-index: 50;
+}
+
+.middle-circle,
+.last-circle,
+.main-circle {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: rgba(238, 114, 3, 0.2);
+    border-radius: 50%;
+}
+
+.main-circle {
+    max-width: 1087px;
+    min-width: 458px;
+}
+
+.middle-circle {
+    max-width: 764px;
+    min-width: 322px;
+    top: 161px;
+    left: 161px;
+}
+
+.last-circle {
+    max-width: 552px;
+    min-width: 232px;
+    top: 267px;
+    left: 267px;
+}
+
+.circles {
+    position: absolute;
+    top: 34px;
+    left: 689px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.exit {
+    width: 40px;
+    height: 40px;
+}
+
+.exit-button {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    background: none;
+    border: none;
+    top: 6px;
+    left: 567px;
+    z-index: 90;
+    cursor: pointer;
+}
+
+.font600-52 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 52px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.font500-24-mon {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.font500-16-mon {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .font600-52 {
+        font-size: 48px;
+    }
+
+    .font500-24-mon {
+        font-size: 20px;
+    }
+
+    .font500-16-mon {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .font600-52 {
+        font-size: 24px;
+    }
+
+    .font500-24-mon {
+        font-size: 16px;
+    }
+
+    .font500-16-mon {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .consultation-window {
+        margin: 0 50px;
+    }
+
+    .circles {
+        left: 50%;
+    }
+
+    .doctor {
+        left: 70%;
+        top: 30%;
+    }
+
+    .exit-button {
+        left: 45%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1918px) {
+    .exit-button {
+        left: 25%;
+    }
+
+    .doctor {
+        left: 70%;
+        top: 25%;
+    }
+}
+
+@media (min-width: 1525px) and (max-width: 1649px) {
+    .exit-button {
+        left: 35%;
+    }
+}
+
+@media (min-width: 1650px) and (max-width: 1918px) {
+    .exit-button {
+        left: 40%;
+    }
+}
+
+@media (min-width: 1921px) {
+    .circles {
+        left: 50%;
+    }
+
+    .doctor {
+        left: 65%;
+    }
+
+    .exit-button {
+        left: 45%;
+    }
+}

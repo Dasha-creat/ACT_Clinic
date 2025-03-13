@@ -1,0 +1,91 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.booking-button-card {
+    background: rgba(238, 114, 3, 1);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    width: 312px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.font300-prize {
+    font-family: Geologica;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.booking-button {
+    width: 100%;
+    height: 80px;
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.next-button-prize {
+    width: 100%;
+    max-width: 312px;
+    min-width: 280px;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(238, 114, 3, 1);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .booking-button-card {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .booking-button-card {
+        width: 100%;
+    }
+
+    .font300-prize {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .font300-prize {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .next-button-prize {
+        width: 250px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px){
+    .next-button-prize {
+        height: 56px;
+    }
+}

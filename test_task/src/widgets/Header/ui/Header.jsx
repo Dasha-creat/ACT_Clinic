@@ -1,6 +1,7 @@
 import { LinkList } from "../../../shared/ui/index"
 import { logo } from "../../../shared/assets/index"
 import { PHONE_NUMBERS, HEADER_TEXT } from "../../../shared/constants/index"
+import { ConsultationContainer } from "../../../features/consultation/ConsultationContainer/index"
 import "./Header.css"
 
 export function Header() {
@@ -22,10 +23,7 @@ export function Header() {
                 </div>
 
                 <div className="button-container">
-                    <button className="booking-button">
-                        <p className="font500-20 font-white">{HEADER_TEXT.sign_up}</p>
-                        <p className="font300-20 font-white">{HEADER_TEXT.take_prize}</p>
-                    </button>
+                    <ConsultationContainer buttonType="container" />
                 </div>
             </div>
             

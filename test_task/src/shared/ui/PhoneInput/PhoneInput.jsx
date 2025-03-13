@@ -1,8 +1,10 @@
 import { useState } from "react"
 import "./PhoneInput.css"
 
-export function PhoneInput() {
+export function PhoneInput({color, border}) {
   const [phone, setPhone] = useState("")
+  const back_color = color === "grey" ? "grey" : "white"
+  const radius = border === "big" ? "big" : "tiny"
 
   const formatPhoneNumber = (value) => {
     const symbols = value.replace(/\D/g, "")
@@ -34,7 +36,7 @@ export function PhoneInput() {
   }
 
   return (
-    <div className="container-phone-input">
+    <div className={`container-phone-input ${back_color} ${radius}`}>
       <input
         id="phone"
         type="text"

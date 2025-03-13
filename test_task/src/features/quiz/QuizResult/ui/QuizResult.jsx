@@ -11,7 +11,7 @@ export function QuizResult() {
                     <div className="phone-input-text">
                         <p className="result-subtitle font-gray">{QUIZ_RESULT_TEXT.subtitle.instruction}</p>
 
-                        <PhoneInput />
+                        <PhoneInput color="grey" border="tiny" />
                     </div>
                 </div>
 
