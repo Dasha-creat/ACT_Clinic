@@ -12,7 +12,7 @@ export const INFO_BLOCK_TEXT = {
     },
     guarantee: {
         subtitle: "Имплантация, протезирование зубов",
-        title: "с пожизненной гарантией"
+        title: "С пожизненной гарантией"
     },
     promo: {
         prize: "В подарок"

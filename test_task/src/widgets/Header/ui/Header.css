@@ -53,16 +53,6 @@ header {
     width: 50%;
 }
 
-.booking-button {
-    width: 100%;
-    height: 80px;
-    background: none;
-    border: 2px solid rgba(255, 255, 255, 1);
-    border-radius: 12px;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
 .working-circle {
     width: 12px;
     height: 12px;

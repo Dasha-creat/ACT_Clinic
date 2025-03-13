@@ -1,0 +1,168 @@
+.phone-consultation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.consultation-window-phone {
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    padding: 40px 24px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.font600-24-mon {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.user-data-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 100;
+}
+
+.user-data-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.font700-16-mon {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.font600-12 {
+    font-family: Geologica;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.font600-16-mon {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.font400-14-mon {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(247, 248, 250, 1);
+    width: 269px;
+    z-index: 70;
+}
+
+.doctor-experience {
+    display: flex;
+    gap: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    background: rgba(238, 114, 3, 1);
+    width: fit-content;
+}
+
+.middle-circle-phone,
+.last-circle-phone,
+.main-circle-phone {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: rgba(238, 114, 3, 0.2);
+    border-radius: 50%;
+}
+
+.main-circle-phone {
+    width: 100%;
+    max-width: 1087px;
+    min-width: 458px;
+}
+
+.middle-circle-phone {
+    max-width: 764px;
+    min-width: 322px;
+    left: 67px;
+    top: 67px;
+}
+
+.last-circle-phone {
+    max-width: 552px;
+    min-width: 232px;
+    left: 112.5px;
+    top: 112.5px;
+}
+
+.circles-phone {
+    position: absolute;
+    top: 467px;
+}
+
+.exit-button-phone {
+    width: fit-content;
+    height: auto;
+    position: absolute;
+    background: 0;
+    border: none;
+    top: 20px;
+    left: 85%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.doctor-phone {
+    position: absolute;
+    width: 240px;
+    height: 286px;
+    top: 488px;
+    left: 173px;
+    z-index: 50;
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+    .circles-phone {
+        left: 50%;
+    }
+
+    .doctor-phone {
+        left: 60%;
+    }
+
+    .font600-24-mon {
+        width: 75%;
+    }
+}
