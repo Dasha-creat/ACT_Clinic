@@ -122,6 +122,7 @@ body {
   letter-spacing: 0%;
 }
 
+.font500-24-second,
 .font500-24 {
   font-family: Geologica;
   font-weight: 500;
@@ -254,6 +255,7 @@ body {
     font-size: 16px;
   }
 
+  .font500-24-second,
   .font500-24 {
     font-size: 20px;
   }
@@ -383,5 +385,9 @@ body {
 
   .font600-32 {
     font-size: 20px;
+  }
+
+  .font500-24-second {
+    font-size: 16px;
   }
 }

@@ -1,0 +1,54 @@
+.before-after-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.before-after-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.before-after-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.before-after-title {
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 56px;
+    width: 80%;
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .before-after-title {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .before-after-title {
+        font-family: Geologica;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 110.00000000000001%;    
+    }
+}
+
+@media (max-width: 768px) {
+    .before-after-title {
+        gap: 12px;
+    }
+
+    .before-after-container {
+        gap: 24px;
+    }
+
+    .before-after-block {
+        gap: 16px;
+    }
+}

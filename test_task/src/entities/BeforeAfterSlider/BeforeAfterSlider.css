@@ -1,0 +1,103 @@
+.before-after {
+    position: relative;
+    width: 100%;
+    max-width: 527px;
+    height: auto; 
+    aspect-ratio: 527 / 501;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.slider-subtitle {
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.text-overlay {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 12px;
+    pointer-events: none; 
+    font-family: Geologica;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 110%;
+    max-width: 110px;
+    min-width: 65px;
+    height: auto;
+    text-align: center;
+}
+
+.before-text {
+    top: 85%;
+    left: 20px;
+    background: rgba(164, 169, 175, 0.64);
+}
+
+.after-text {
+    top: 85%;
+    right: 20px;
+    background: rgba(238, 114, 3, 1);
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .slider-subtitle {
+        font-size: 24px;
+    }
+
+    .text-overlay {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider-subtitle {
+        font-family: Geologica;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .text-overlay {
+        font-size: 14px;
+        line-height: 120%;
+        padding: 12px 4px;
+    }
+
+    .before-text,
+    .after-text {
+        top: 80%;
+    }
+
+    .before-text {
+        left: 12px;
+    }
+
+    .after-text {
+        right: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .before-after {
+        max-width: 312px;
+        aspect-ratio: 312 / 263; 
+    }
+}

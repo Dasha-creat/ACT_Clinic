@@ -1,4 +1,4 @@
-import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers, Experts } from "../../../widgets/index"
+import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers, Experts, BeforeAfterBlock } from "../../../widgets/index"
 import "./MainPage.css"
 
 export function MainPage() {
@@ -11,18 +11,25 @@ export function MainPage() {
 
       <div className="main-info-container">
         <Advantages />
-        <div className="promo-quiz">
-        <TextPromoPrizeBlock />
-        <Quiz />
-        <ImplantsList />
-        </div>
 
+        <div className="promo-quiz">
+          <TextPromoPrizeBlock />
+
+          <Quiz />
+        </div>
       </div>
+
       <div className="container-full">
-      <Experts />
+        <BeforeAfterBlock />
+        <Experts />
       </div>
+
+      <div className="container-middle">
+        <ImplantsList />
+      </div>
+
       <div className="container-full">
-      <Answers />
+        <Answers />
       </div>
 
     </>
