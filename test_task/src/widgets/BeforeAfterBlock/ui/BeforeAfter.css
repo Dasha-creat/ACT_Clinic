@@ -1,6 +1,6 @@
 .before-after-block {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
     gap: 20px;
     width: 100%;
 }
@@ -31,10 +31,6 @@
 }
 
 @media (max-width: 1024px) {
-    .before-after-block {
-        grid-template-columns: 1fr;
-    }
-
     .before-after-title {
         font-family: Geologica;
         font-weight: 500;

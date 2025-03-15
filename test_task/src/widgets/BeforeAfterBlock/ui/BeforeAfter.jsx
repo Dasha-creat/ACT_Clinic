@@ -1,6 +1,6 @@
 import "./BeforeAfter.css"
 import { BEFORE_AFTER, BEFORE_AFTER_TEXT } from "../../../shared/constants"
-import { BeforeAfterSlider } from "./BeforeAfterSlider"
+import { BeforeAfterSlider } from "../../../entities/BeforeAfterSlider/index"
 
 export function BeforeAfterBlock() {
     return (
