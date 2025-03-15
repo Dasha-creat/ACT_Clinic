@@ -1,0 +1,203 @@
+.stage {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 24px;
+    padding: 40px;
+    background: rgba(247, 248, 250, 1);
+}
+
+.stage__header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.stage__content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.stage__time {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stage__doctor,
+.stage__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stage__time,
+.stage__doctor-photo-wrapper,
+.stage__item-photo-wrapper {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 193px;
+}
+
+.stage__doctor-photo-wrapper,
+.stage__item-photo-wrapper {
+    background: rgba(255, 255, 255, 1);
+}
+
+.stage__doctor-photo-wrapper {
+    height: 100%;
+}
+
+.stage__item-photo-wrapper {
+    align-items: center;
+    padding: 15px 65px;
+    height: 100%;
+}
+
+.stage__item-photo {
+    width: 100%;
+    max-width: 163px;
+    min-width: 134px;
+    max-height: 163px;
+    min-height: 100px;
+}
+
+.stage__doctor-photo {
+    width: 100%;
+    max-width: 169px;
+    min-width: 134px;
+    max-height: 295px;
+    min-height: 100px;
+}
+
+.stage__time {
+    align-items: center;
+    background: rgba(0, 154, 148, 1);
+}
+
+.stage__time-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.stage__time-units,
+.stage__time-value,
+.stage__name,
+.stage__number,
+.stage__doctor-work,
+.stage__item-name {
+    font-family: Geologica;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+}
+
+.stage__name {
+    color: rgba(238, 114, 3, 1);
+}
+
+.stage__time-units,
+.stage__time-value {
+    color: rgba(255, 255, 255, 1);
+}
+
+.stage__number,
+.stage__doctor-work,
+.stage__item-name {
+    color: rgba(43, 49, 62, 1);
+}
+
+.stage__doctor-work,
+.stage__item-name {
+    font-size: 24px;
+}
+
+.stage__time-units,
+.stage__name,
+.stage__number {
+    font-size: 40px;
+}
+
+.stage__time-value {
+    font-size: 56px;
+}
+
+@media (max-width: 1024px) {
+    .stage__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .stage__time {
+      grid-column: span 2;
+      flex-direction: row;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .stage {
+        padding: 16px;
+    }
+
+    .stage__doctor-work,
+    .stage__item-name {
+        font-size: 14px;
+    }
+
+    .stage__name,
+    .stage__number {
+        font-size: 20px;
+    }
+
+    .stage__time-units,
+    .stage__time-value {
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    .stage__time-value {
+        font-size: 32px;
+    }
+
+    .stage__time-units {
+        font-size: 24px;
+    }
+
+    .stage__time {
+        box-sizing: border-box;
+        padding: 12px 36px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .stage__doctor-photo,
+    .stage__item-photo {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .stage__doctor-photo-wrapper,
+    .stage__item-photo-wrapper {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1850px) {
+    .stage__doctor-work,
+    .stage__item-name {
+        font-size: 20px;
+    }
+
+    .stage__time-units 
+    .stage__name,
+    .stage__number {
+        font-size: 36px;
+    }
+
+    .stage__time-value {
+        font-size: 50px;
+    }
+}
