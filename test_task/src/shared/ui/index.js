@@ -8,3 +8,4 @@ export { ConsultationWindowLaptop } from "./ConsultationWindowLaptop/Consultatio
 export { ConsultationWindowPhone } from "./ConsultationWindowPhone/ConsultationWindowPhone"
 export { NameInput } from "./NameInput/NameInput"
 export { ConsultationAgreement } from "./ConsultationAgreement/ConsultationAgreement"
+export { ReviewSlider } from "./ReviewSlider/ReviewSlider"

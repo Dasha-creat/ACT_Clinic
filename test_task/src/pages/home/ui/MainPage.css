@@ -12,6 +12,10 @@
     gap: 80px;
 }
 
+.container-full-gradient {
+    padding-right: 0px;
+}
+
 .promo-quiz {
     display: flex;
     flex-direction: column;
@@ -20,6 +24,7 @@
     padding: 40px 0px;
 }
 
+.container-full-gradient,
 .container-middle {
     display: flex;
     flex-direction: column;
@@ -37,8 +42,13 @@
         padding: 60px 72px;
     }
     
+    .container-full-gradient,
     .container-full {
         padding: 70px 72px;
+    }
+
+    .container-full-gradient {
+        padding-right: 0px;
     }
 }
   
@@ -51,8 +61,13 @@
         padding: 40px 24px;
     }
 
+    .container-full-gradient,
     .container-full {
         padding: 60px 24px;
+    }
+
+    .container-full-gradient {
+        padding-right: 0px;
     }
 }
   
@@ -65,9 +80,14 @@
         padding: 40px 16px;
     }
 
+    .container-full-gradient,
     .container-full {
         padding: 40px 16px;
         gap: 40px;
+    }
+
+    .container-full-gradient {
+        padding-right: 0px;
     }
 
     .promo-quiz {
