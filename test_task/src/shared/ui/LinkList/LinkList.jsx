@@ -16,7 +16,7 @@ export const LinkList = ({ deleteLast }) => {
                 </button>
             )}
 
-            <ul className="link-list" >
+            <ul className={`${!deleteLast ? "link-list" : "link-list-footer"}`} >
                 {visibleLinks.map((link) => (
                     <li key={link.name}>
                         <a key={link.url} className={`font-white ${deleteLast ? 'font400' : 'font500'}`}>{link.name}</a>

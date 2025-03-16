@@ -24,6 +24,7 @@
     padding: 40px 0px;
 }
 
+.footer-container,
 .container-full-gradient,
 .container-middle {
     display: flex;
@@ -31,6 +32,10 @@
     gap: 60px;
     box-sizing: border-box;
     padding: 80px 150px;
+}
+
+.footer-container {
+    background: rgba(43, 49, 62, 1);
 }
 
 @media (min-width: 1024px) and (max-width: 1850px) {
@@ -42,6 +47,7 @@
         padding: 60px 72px;
     }
     
+    .footer-container,
     .container-full-gradient,
     .container-full {
         padding: 70px 72px;
@@ -61,6 +67,7 @@
         padding: 40px 24px;
     }
 
+    .footer-container,
     .container-full-gradient,
     .container-full {
         padding: 60px 24px;
@@ -80,6 +87,7 @@
         padding: 40px 16px;
     }
 
+    .footer-container,
     .container-full-gradient,
     .container-full {
         padding: 40px 16px;

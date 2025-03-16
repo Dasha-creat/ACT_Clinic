@@ -13,3 +13,4 @@ export { CONSULTATION_TEXT, CONSULTATION_LIST } from "./ConsultationText/consula
 export { BEFORE_AFTER, BEFORE_AFTER_TEXT } from "./BeforeAfterText/beforeAfterText"
 export { STAGES, STAGES_TEXT } from "./StagesText/stagesText"
 export { REVIEWS_TEXT } from "./ReviewsText/reviewsText"
+export { FOOTER_TEXT } from "./FooterText/footerText"
