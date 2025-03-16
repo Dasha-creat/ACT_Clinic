@@ -1,0 +1,48 @@
+.review-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.review-slider .swiper {
+    width: 100%;
+    background: radial-gradient(closest-side, rgba(238, 114, 3, 1) 0%, rgba(247, 248, 250, 0) 100%);
+}
+
+.review-slider__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-slider__button:not(.review-slider__button--disabled) {
+    background: rgba(238, 114, 3, 1);
+}
+
+.review-slider__button--disabled {
+    background: rgba(233, 235, 240, 1);
+    cursor: default;
+}
+
+.review-slider__button img {
+    width: 32px;
+    height: 32px;
+}
+
+.review-slider__navigation {
+    display: flex;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .review-slider__navigation {
+        display: none;
+    }
+}

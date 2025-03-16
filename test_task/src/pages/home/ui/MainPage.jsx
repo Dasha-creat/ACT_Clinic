@@ -1,4 +1,4 @@
-import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers, Experts, BeforeAfterBlock, Stages } from "../../../widgets/index"
+import { Header, InfoBlock, Advantages, TextPromoPrizeBlock, Quiz, ImplantsList, Answers, Experts, BeforeAfterBlock, Stages, Reviews } from "../../../widgets/index"
 import "./MainPage.css"
 
 export function MainPage() {
@@ -34,6 +34,10 @@ export function MainPage() {
 
       <div className="container-full">
         <Answers />
+      </div>
+
+      <div className="container-full-gradient">
+        <Reviews />
       </div>
     </>
   )
