@@ -1,3 +1,4 @@
+.link-list-footer,
 .link-list {
     display: flex;
     flex-direction: row;
@@ -9,7 +10,6 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .burger-menu {
@@ -39,5 +39,11 @@ img {
         display: none;
         flex-direction: column;
         position: absolute;
+    }
+
+    .link-list-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
     }
   }
